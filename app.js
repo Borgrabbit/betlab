@@ -9,6 +9,15 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+var attend = require('./routes/attend');
+var battle = require('./routes/battle');
+var bodydata = require('./routes/bodydata');
+var fb_signin = require('./routes/fb_signin');
+var gym = require('./routes/gym');
+var inbody = require('./routes/inbody');
+var mainpage = require('./routes/mainpage');
+
+
 var port = 3001;
 
 var app = express();
@@ -27,6 +36,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/attend', attend);
+app.use('/battle', battle);
+app.use('/bodydata', bodydata);
+app.use('/fb_signin', fb_signin);
+app.use('/gym', gym);
+app.use('/inbody', inbody);
+app.use('/mainpage', mainpage);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

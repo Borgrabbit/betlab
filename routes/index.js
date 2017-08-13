@@ -16,7 +16,6 @@ router.get('/', function(req, res, next){
 });
 
 //FB 로그인 요청
-//  /:fb_id/:fb_name/:fb_gen
 router.post('/fb_login', function(req, res, next) {
 	var data = req.body;
 
@@ -64,7 +63,6 @@ var idS = '1377052065745624';
 var idH = '1311435925634085';
 var tokenS = "c71NtSzOlyE:APA91bG9iHki6pF88GlAmirUyzrFzbuqt1Jkh9az1zU6KTXsB17uLRe4Xu-IDCLi9lymD1887HmYDDtqtMnjCmXVe6mTQInrGVszxwpsiShTP3VbmAKX2Gr9zEYP5pczFz8bRE2rNNx-";
 var tokenH = "dGltxFKOrWE:APA91bE80eSNdjTzSgRV6ZVQmtQaWEiSRXYPVFgxxI4qpGWCrMvqlDjL9M7MZLuNsLiBeR_bo1ADwB3ouAx2KE5w1LJrlr0sJeUaBAsRRzox4r_hgWDGLpDXUkHc5m7va2Wf2-sVgA9a";
-
 
 
 
@@ -139,6 +137,13 @@ router.post('/sendFcmNotification', function(req, res) {
 
 router.get('/test', function(req, res, next){
    res.send('dbbase');
+});
+
+
+router.get('/push_setting', function(req, res, next){
+	res.json({
+		"nodefcm" : "nodefcm"
+	});
 });
 
 
