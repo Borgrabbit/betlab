@@ -67,7 +67,7 @@ var tokenH = "dGltxFKOrWE:APA91bE80eSNdjTzSgRV6ZVQmtQaWEiSRXYPVFgxxI4qpGWCrMvqlD
 
 
 // 안드로드이드 푸시 코드
-router.post('/push', function(req, res) {
+router.post('/pushtest', function(req, res) {
     // 선오가 완료하면 파라미터로 토큰값을 받아넘겨 테스트해야함.
 
 	var data = req.body;

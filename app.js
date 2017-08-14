@@ -16,6 +16,7 @@ var fb_signin = require('./routes/fb_signin');
 var gym = require('./routes/gym');
 var inbody = require('./routes/inbody');
 var mainpage = require('./routes/mainpage');
+var push = require('./routes/push');
 
 
 var port = 3001;
@@ -43,6 +44,7 @@ app.use('/fb_signin', fb_signin);
 app.use('/gym', gym);
 app.use('/inbody', inbody);
 app.use('/mainpage', mainpage);
+app.use('/push', push);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

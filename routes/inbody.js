@@ -14,4 +14,14 @@ router.get('/', function(req, res, next) {
 	});
 });
 
+router.post('/', function(req, res, next) {
+	res.json({
+		"success" : 1,
+		"message" : "Inbody info successfully saved",
+		"result" : ""
+		
+	});
+});
+
+
 module.exports = router;

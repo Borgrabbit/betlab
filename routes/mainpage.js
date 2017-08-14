@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/:member_no', function(req, res, next) {
 	var battle_receiver = '';
 	var battle_period = '';
 	var battle_category = '';

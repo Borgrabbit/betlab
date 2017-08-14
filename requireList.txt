@@ -1,6 +1,7 @@
-express
-nodemon
-pm2
+express-generator -g
+nodemon -g
 
+
+pm2
 fcm-node
 
