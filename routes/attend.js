@@ -5,7 +5,7 @@ router.post('/', function(req, res, next) {
 	res.json({
 		"sucesss" : 1,
 		"message" : "출석 성공",
-		"result" : "",
+		"result" : [""],
 	});
 });
 

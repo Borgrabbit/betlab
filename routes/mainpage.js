@@ -13,7 +13,7 @@ router.get('/:member_no', function(req, res, next) {
 	res.json({
 		"success" : 1,
 		"message" : "mainpage response",
-		"result" :	{
+		"result" :	[{
 					"battle_active" : 1,
 					"battle_receiver_2" : battle_receiver,
 					"battle_period_2" : battle_period,
@@ -22,7 +22,7 @@ router.get('/:member_no', function(req, res, next) {
 					"battle_sender_inbody_3" : battle_sender_inbody,
 					"battle_member_attend_3" : member_attend,
 					"gym_1" : member_gym
-				}
+				}]
 	});
 });
 

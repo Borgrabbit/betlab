@@ -23,7 +23,7 @@ router.post('/setting', function(req, res, next) {
 	res.json({
 		"sucesss" : 1,
 		"message" : "설정변경성공",
-		"result" : ""
+		"result" : [""]
 	});
 });
 
