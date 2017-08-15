@@ -6,7 +6,7 @@ router.post('/', function(req, res, next) {
 	res.json({
 		"success" : 1,
 		"message" : "신체정보 입력완료",
-		"result" : [""]
+		"result" : ""
 	});
 });
 

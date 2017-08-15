@@ -12,13 +12,13 @@ router.post('/', function(req, res, next) {
 	res.json({
 		"success" : 1,
 		"message" : "Searching closest gyms",
-		"result" : [{
+		"result" : {
 			"gym_name" : gym_name,
 			"gym_distance" : gym_distance,
 			"gym_fulladdress" : gym_fulladdress,
 			"gym_address1" : gym_address1,
 			"gym_address2" : gym_address2
-		}]
+		}
 	});
 });
 
@@ -28,14 +28,13 @@ router.get('/:address1/:address2/:member_no', function(req, res, next){
     res.json({
         "success" : 1,
         "message" : "지역별 헬스장 응답 성공",
-        "result" : [
+        "result" : 
             {
                 gym_name : "선오헬스 ",
                 gym_fulladdress : "서울",
                 gym_address1 : "seoul",
                 gym_address2 : "중구"
             }
-        ]
     })
 });
 
@@ -45,14 +44,13 @@ router.get('/:search_word/:member_no', function(req, res, next){
     res.json({
         "success" : 1,
         "message" : "검색어 헬스장 응답 성공",
-        "result" : [
+        "result" : 
             {
                 gym_name : "선오헬스 ",
                 gym_fulladdress : "서울",
                 gym_address1 : "seoul",
                 gym_address2 : "중구"
             }
-        ]
     })
 });
 

@@ -6,7 +6,7 @@ var options = {
 var db = mongoose.createConnection(url, options);
 
 db.once('open', function(){
-    console.log('MongoDB sonnected successfully');
+    console.log('MongoDB connected successfully');
 });
 
 db.on('error', function(err){
